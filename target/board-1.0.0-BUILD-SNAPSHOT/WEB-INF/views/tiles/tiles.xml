@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" 
+			value="/WEB-INF/views/pages/home.jsp" />
+	</definition> 
+	
+	<!-- 게시글 내용 -->
+	<definition name="board_details" extends="base-definition">
+		<put-attribute name="title" value="board_details" />
+		<put-attribute name="body" 
+			value="/WEB-INF/views/pages/board_details.jsp" />
+	</definition>
+	
+	<!-- 게시글 목록 -->
+	<definition name="board_list" extends="base-definition">
+		<put-attribute name="title" value="board_list" />
+		<put-attribute name="body" 
+			value="/WEB-INF/views/pages/board_list.jsp" />
+	</definition>
+	
+	<!-- 게시글 작성 -->
+	<definition name="board_add" extends="base-definition">
+		<put-attribute name="title" value="board_add" />
+		<put-attribute name="body" 
+			value="/WEB-INF/views/pages/board_add.jsp" />
+	</definition>
+
+	<!-- 게시글 편집 -->
+	<definition name="board_edit" extends="base-definition">
+		<put-attribute name="title" value="board_edit" />
+		<put-attribute name="body" 
+			value="/WEB-INF/views/pages/board_edit.jsp" />
+	</definition>
+	
+	<!-- 게시글 처리 결과 -->
+	<definition name="board_process_result" extends="base-definition">
+		<put-attribute name="title" value="board_process_result" />
+		<put-attribute name="body" 
+			value="/WEB-INF/views/pages/board_process_result.jsp" />
+	</definition>
+	
+</tiles-definitions>

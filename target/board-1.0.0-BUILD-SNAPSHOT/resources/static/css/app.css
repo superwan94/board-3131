@@ -1,0 +1,66 @@
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+	
+html {
+	height: 100%;
+}	
+body {
+	height: 100%;
+	width:100%;
+	background:#A1B6D8;
+} 
+
+.wrap{
+    width:100%;
+    height:100%;
+    position:relative;
+} 
+.center_box{ 
+    width:350px;
+    height:350px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-175px;
+    margin-top:-175px;
+    border-radius:10%;
+    background:white;
+}
+.center_signup{ 
+    width:400px;
+    height:440px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-200px;
+    margin-top:-220px;
+    border-radius:10%;
+    background:white;
+}
+
+#header {
+	background: #e1e1ff;	
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 1;
+}
+
+#footer {
+	grid-column: 1/3;
+	grid-row: 3;
+}
+
+#sidemenu {
+	grid-column: 1/2;
+	grid-row: 2;
+}
+
+#sidemenu ul {
+	list-style: none;
+}
+
+#site-content {
+	background: #e1e1ff;
+
+	grid-column: 2/3;
+	grid-row: 2;
+}
